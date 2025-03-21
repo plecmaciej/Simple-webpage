@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
+	<xs:element name="hipertext" type="hipertextType"/>  
+	<xs:complexType name="hipertextType">
+		<xs:sequence>
+			<xs:element name="autor" type="autorType" /> 	
+			<xs:element name="tytul" type="tytulType"/>   
+			<xs:element name="artysci" type="artysciType"/>
+		</xs:sequence>
+	</xs:complexType>
+
+    <xs:element name="zdjecie" type="daneType"/>
+	<xs:element name="strona" type="daneType"/>
+
+    <xs:complexType name="daneType">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="source" type="xs:anyURI" use="required"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+
+	<xs:simpleType name="krotkiType">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="30"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="dlugiType">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="70"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+    <xs:complexType name="autorType">
+		<xs:sequence>
+			<xs:element name="imie" type="krotkiType" />		
+			<xs:element name="nazwisko" type="krotkiType" />	
+	</xs:complexType>
+
+    <xs:simpleType name="tytulType"> 					
+		<xs:restriction base="xs:string">
+			<xs:minLength value="6"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:complexType name="artysciType">
+		<xs:sequence>
+			<xs:element name="artysta" type="artystaType" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="artystaType">
+	<xs:complexContent>
+		<xs:extension base="autorType">
+            <xs:sequence>
+                    <xs:element name="rokurodzenia" type="xs:gYear" minOccurs="1" maxOccurs="1"/>
+                    <xs:element name="roksmierci" type="xs:gYear" minOccurs="0" maxOccurs="1"/>
+                    <xs:element name="informacje" type="xs:string"/>
+                    <xs:element ref="zdjecie"/>
+                    <xs:element ref="strona"/>
+                    <xs:element name="koncerty">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="koncert" type="koncertType" maxOccurs="unbounded"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                    </xs:element>
+            </xs:sequence>
+		<xs:attribute name="zyje" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="tak"/>
+					<xs:enumeration value="nie"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		</xs:extension>
+	</xs:complexContent>
+	</xs:complexType>
+    
+	<xs:complexType name="koncertType">
+		<xs:sequence>
+			<xs:element name="data" type="date" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="godzina" type="time" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="ocena" type="double" minOccurs="1" maxOccurs="1"/>
+		</xs:sequence>
+		<xs:attribute name="n"/>
+	</xs:complexType>
+
+
+</xs:schema>

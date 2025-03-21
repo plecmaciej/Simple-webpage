@@ -1,0 +1,224 @@
+body
+{
+   
+    margin: 0 !important;
+    color: #2A0934;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+}
+#page
+{
+    width: 100%;
+    background-color: #FFF;
+}
+
+header
+{
+    width: 100%;
+    padding: 60px 0;
+
+}
+
+.logo
+{   
+    height: 60px;
+    border-radius: 100px;
+    text-align: center;
+    width: 420px;
+    border: 4px solid #000;
+    font-size: 50px;
+    color: #000;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+.icon 
+{
+    width: 63px;
+}
+
+nav
+{
+    width:100%;
+    background-color: #000;
+    text-align: center;
+    padding: 10px 0;
+}
+
+main
+{
+    border-right: SOLID 3px #000;
+    border-left: SOLID 3px #000;
+    background-color: #12df50d9;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    padding:30px;
+    line-height: 30px;
+}
+
+ol
+{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    line-height: 220%;
+    display:inline-block;
+}
+
+ol a:first-child 
+{
+    border-left: 1px solid white;
+}
+
+ol a 
+{
+    color: #FFF;
+    text-decoration: none;
+    display: block;
+    border-right: 1px solid white;
+}
+
+ol>li
+{
+    float: left;
+    width: 200px;
+    height: 40px;
+}
+
+
+ol>li:hover
+{
+    background-color: gray;
+    color: #000;
+}
+
+ol > li > ul
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 40px;
+    display: none;
+}
+
+ol > li:hover > ul
+{
+    display: block;
+    color: #000;
+}
+
+ol > li > ul > li:first-child
+{
+   
+    border-top: 1px solid white;
+    
+}
+
+ol > li > ul > li 
+{
+    background-color: gray;
+    position:relative;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+
+}
+
+ol > li > ul > li:hover
+{
+ background-color: #2A0934;
+ z-index: 300;
+}
+
+ol > li > ul > li > a:hover
+{
+ color: white;
+ z-index: 300;
+}
+ 
+
+footer
+{
+    width:100%;
+    background-color: #000000;
+    text-align: center;
+    padding: 30px 0;
+    color: #FFFFFF;
+}
+
+
+
+
+
+@media only screen and (max-width: 900px) {
+	table{display:none}
+    ol > li{width: 120px;}
+    .logo{width:80%}
+    
+}
+
+
+.sticky
+{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+.artist
+{
+    border: solid black;
+    width:300px;
+}
+
+h1
+{   
+    letter-spacing: 2px;
+    padding: 10px;
+    text-align: center;
+}
+
+h2
+{
+    text-align: center;
+    border-top:solid #000 ;
+    border-bottom:solid #000 ;
+    padding: 13px;
+}
+
+h3
+{
+    text-align: center;
+}
+
+#con
+{
+    display: block;
+}
+
+.con
+{
+    width:100px;
+    color:#FFFFFF;
+    background-color: #000;
+    padding: 10px;
+}
+
+article
+{
+    padding-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #000;
+	text-align: center;
+    margin-bottom: 60px;
+}
+
+#end
+{
+    border-bottom: solid 2px black;
+}

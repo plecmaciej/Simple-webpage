@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+   
+    <meta charset="utf-8">
+    <title>Moje hobby</title>
+    <link rel="stylesheet" href="formularz.css">
+   
+</head>
+
+<body>
+
+    <div id="page">
+
+        
+        <header>
+           
+            <div class="logo">
+
+                <img src="photo/Vinyl_Green.png" class="icon" style="float:left" alt="*">
+                    Disco Polo
+                <img src="photo/Vinyl_Green.png" class="icon" style="float:right" alt="*">
+
+            </div>
+
+        </header>
+
+        <nav>
+
+            <ol>    
+            <li><a href=index.html>Strona główna</a></li>
+            <li><a href=artysci.html>Artyści</a>
+            <ul>
+                <li><a href="artysci.html#zenek">Zenek</a></li>
+                <li><a href="artysci.html#kizo">Kizo</a></li>
+                <li><a href="artysci.html#bratan">Bratan</a></li>
+                <li><a href="artysci.html#pudzian">Pudzian</a></li>
+                <li><a href="artysci.html#bedoes">Bedoes</a></li>
+            </ul>
+            </li>     
+            <li><a href=koncerty.html> Koncerty</a></li>
+            <li><a href=formularz.html> Formularz</a></li>
+            </ol>
+           
+        </nav>
+
+            <main>
+
+                <h1>Pytania</h1>    
+                <form action="formularz.php" method="get">
+                     
+                    <h2> Dane personalne : </h2>
+
+                    <div class="formularz">
+                      
+                                Imię <br/>
+                                <input type="text" name="imie">
+                               <br/><br/>
+                                Nazwisko <br/>
+                                <input type="text" name="nazwisko" >
+                                <br/><br/>
+                                Wiek<br/>
+                                <input type="text" name="wiek">
+                                <br/><br/>
+                                Płeć<br/><label>
+                                <input type="radio" name="plec" value="kobieta">Kobieta</label> <br/>
+                                <input type="radio" name="plec" value="mezczyzna">Mężczyzna
+                                <br /><br />
+                                E-mail<br/>
+                                <input type="text" name="email">
+                                <br /><br />
+                                Numer telefonu<br/>
+                                <input type="text" name="numer">
+                                <br /><br />
+                                Data:
+                                <p> <input type="date" ></p>
+                                <br /><br />
+                                
+                               
+                                
+                    </div>
+
+                    <h2>Szczególy pytania : </h2>
+
+                    <div class="formularz">
+                            Podaj gatunki:
+                            <br>
+                        <input type="checkbox" name="Muzyka" value="Rock">Rock<br>
+                        <input type="checkbox" name="Muzyka" value="Heavy Metal">Heavy Metal<br>
+                        <input type="checkbox" name="Muzyka" value="Pop">Pop<br>
+                        <input type="checkbox" name="Muzyka" value="Techno">Techno<br>
+                        <input type="checkbox" name="Muzyka" value="Muzyka poważna">Muzyka poważna<br>
+                        <label><input type="checkbox" name="Muzyka" value="Inna">Inna (podaj jaka):</label>
+
+                        <br/><br/>
+
+                            Czego dotyczy pytanie?<br>
+
+                       
+
+                            <select name="tresc">
+                                <option selected>Artysta</option>
+                                <option>Gatunek</option>
+                                <option>Utwory</option>
+                                <option>Albumy</option>
+                                <option>Inne</option>
+                            </select><br><br>
+
+                             Treść pytania : <br/>
+
+                        <textarea name="pytanie" cols="125" rows="20" ></textarea>
+                      
+                        <br /><br />
+
+                    </div>
+                    
+                        <br>
+                        <input type="submit" value="Wyślij">
+                        <br/>
+                        <input type="reset" value="Wyczyść dane">
+
+                </form>
+
+                <br><br><br>
+
+            </main>
+
+            <footer>
+
+                Maciej Plec Copyright 2022 
+            
+            </footer>
+
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+     
+        <script>
+     
+        $(document).ready(function() {
+        var NavY = $('nav').offset().top;
+          
+        var stickyNav = function(){
+        var ScrollY = $(window).scrollTop();
+               
+        if (ScrollY > NavY) { 
+            $('nav').addClass('sticky');
+        } else {
+            $('nav').removeClass('sticky'); 
+        }
+        };
+          
+        stickyNav();
+          
+        $(window).scroll(function() {
+            stickyNav();
+        });
+        });
+         
+        </script>
+    </body>
+
+</html>

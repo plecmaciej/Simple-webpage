@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hipertext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:noNamespaceSchemaLocation="index.xsd">
+	<autor>
+		<imie>Maciej</imie>
+		<nazwisko>Plec</nazwisko>
+	</autor>
+	<tytuł>
+		Najwieksi artysci
+	</tytuł>
+	<artysci>
+		<artysta zyje="tak">
+			<imie>Zenon </imie>
+			<nazwisko>Martyniuk</nazwisko>
+            <pseudonim>Zenek</pseudonim>
+			<rokurodzenia>1970</rokurodzenia>
+			<informacje>
+		        Listę nie mogl rozpoczac nikt inny jak najslynniejszy spiewak w polsce. Swoją kariere zaczal
+                tak dawno ze ciezko zapamietac kiedy. Wazne natomiast jest to ze zdecydowanie blyszczy jako 
+                gwiazda sylwestra w tvp gdzie co roku spiewa swoj najwiekszy hit o pszczołach i historii o 
+                swoim pobycie w zakladzie psychiatrycznym po tym jak oszalał na punkcie zielonych gałek ocznych. 
+                Zdecydowanie wzor do nasladowania.
+			</informacje>
+			<zdjecie source="photo\zenek.jpg">Zenon Martyniuk</zdjecie>
+			<strona source="https://www.zespolakcent.pl">Zenon Martyniuk</strona>
+			<koncerty>
+				<koncert n="1">
+					<data>16.8</data>
+					<godzina>17.00</godzina>
+					<ocena>10</ocena>
+				</koncert>
+                <koncert n="2">
+					<data>16.8</data>
+					<godzina>17.00</godzina>
+					<ocena>10</ocena>
+				</koncert>
+                <koncert n="3">
+					<data>16.8</data>
+					<godzina>17.00</godzina>
+					<ocena>10</ocena>
+				</koncert>
+			</koncerty>
+		</artysta>
+		<artysta zyje="tak">
+			<imie>Patryk </imie>
+			<nazwisko>Wozinski</nazwisko>
+            <pseudonim>Kizo</pseudonim>
+			<rokurodzenia>1990</rokurodzenia>
+			<informacje>
+		        Pisząc ten tekst nie mam zamiaru się smucić tylko zatracić w tym co najlepsze. 
+                Kizo to artysta z Gdańska dzięki czemu wie że ludzie chcą się kłócić chcą nas zdusić
+                 jakby to było konieczne. Poza tym jest też biznesmenem ma swoją markę kaw, pizz,
+                  batonów nie tylko ona mu ufa daje mu rękę wszystko zamienia w bajeczne. Ponadto
+                   nasz grajek nagrywa seriale i jest wszechstronnie rozwiniety więc niech trwa jeszcze
+                    hotelowa doba w apartamencie. Ten artysta kiedys nie mial a teraz ma.
+			</informacje>
+			<zdjecie source="photo\kizo.jpg">Zenon Martyniuk</zdjecie>
+			<strona source="https://www.zespolakcent.pl">Zenon Martyniuk</strona>
+			<koncerty>
+				<koncert n="1">
+					<data>26.9</data>
+					<godzina>15.00</godzina>
+					<ocena>9.0</ocena>
+				</koncert>
+                <koncert n="2">
+					<data>2.2</data>
+					<godzina>12.00</godzina>
+					<ocena>6.0</ocena>
+				</koncert>
+			</koncerty>
+		</artysta>
+        <artysta zyje="tak">
+			<imie>Krystian </imie>
+			<nazwisko>Pudzianowski</nazwisko>
+            <pseudonim>Brat pudziana</pseudonim>
+			<rokurodzenia>1980</rokurodzenia>
+			<informacje>
+		        Pudzian band to zdecydwowanie najwiekszy zespół z jakim mialem stycznosc. 
+                Tworzy go brat najwiekszego Polaka w historii - Krystian Pudzianowski.
+                 W przeciwieństwie do brata Krystian zamiast łapać i rzucać zaczął karierę muzyczną.
+                  Tanio skóry nie sprzedał ale swoje płyty już tak, dzięki czemu wystąpił na 
+                  stadionie narodowym przed walką Mariusza z Testosteronem.
+			</informacje>
+			<zdjecie source="photo\pudzian.jpg">Zenon Martyniuk</zdjecie>
+			<strona source="https://www.zespolakcent.pl">Zenon Martyniuk</strona>
+			<koncerty>
+				<koncert n="1">
+					<data>19.8</data>
+					<godzina>15.00</godzina>
+					<ocena>2.0</ocena>
+				</koncert>
+                <koncert n="2">
+					<data>7.2</data>
+					<godzina>13.00</godzina>
+					<ocena>10</ocena>
+				</koncert>
+                <koncert n="3">
+					<data>12.8</data>
+					<godzina>17.00</godzina>
+					<ocena>3.5</ocena>
+				</koncert>
+                <koncert n="4">
+					<data>16.8</data>
+					<godzina>3.00</godzina>
+					<ocena>8.5</ocena>
+				</koncert>
+			</koncerty>
+		</artysta>
+	</artysci>
+</hipertext>

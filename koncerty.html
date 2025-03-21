@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+   
+    <meta charset="utf-8">
+    <title>Moje hobby</title>
+    <link rel="stylesheet" href="koncerty.css">
+   
+</head>
+
+<body>
+
+    <div id="page">
+
+        
+        <header>
+           
+            <div class="logo">
+
+                <img src="photo/Vinyl_Green.png" class="icon" style="float:left" alt="*">
+                    Disco Polo
+                <img src="photo/Vinyl_Green.png" class="icon" style="float:right" alt="*">
+
+            </div>
+
+        </header>
+
+        <nav>
+
+            <ol>    
+            <li><a href=index.html>Strona główna</a></li>
+            <li><a href=artysci.html>Artyści</a>
+            <ul>
+                <li><a href="artysci.html#zenek">Zenek</a></li>
+                <li><a href="artysci.html#kizo">Kizo</a></li>
+                <li><a href="artysci.html#bratan">Bratan</a></li>
+                <li><a href="artysci.html#pudzian">Pudzian</a></li>
+                <li><a href="artysci.html#bedoes">Bedoes</a></li>
+            </ul>
+            </li>     
+            <li><a href=koncerty.html> Koncerty</a></li>
+            <li><a href=formularz.html> Formularz</a></li>
+            </ol>
+           
+        </nav>
+
+            <main>
+                
+                    <h1>Koncerty:</h1>
+                        
+                         <br/>
+                         <table>
+                            <thead>
+                               <tr>
+                                  <th>Nazwisko</th> <th>Imię</th> <th>Ilość koncertów</th> <th>Rozpoczęcie trasy</th>
+                                   <th>Zakończenie trasy</th> <th>Najwyższa ocena</th>
+                               </tr>
+                            </thead>
+                            <tbody>
+                               <tr>
+                                  <th>Bratan</th> <td>Josef</td> <td>19</td> <td>16.8</td> <td>17.9</td>
+                                   <td>10</td>
+                               </tr>
+                               <tr>
+                                  <th>Martyniuk</th> <td>Zenon</td> <td>66</td>  <td>16.8</td> <td>5.2</td>
+                                  <td>33.5</td> 
+                               </tr>
+                               <tr>
+                                  <th>Bedoes</th> <td>Borys</td> <td>16</td>  <td>16.5</td> <td>7.7</td>
+                                  <td>8.5</td> 
+                               </tr>
+                               <tr>
+                                  <th>Pudzianowski</th> <td>Mariusz</td> <td>3</td>  <td>16.8</td> <td>31.2</td>
+                                  <td>3.5</td> 
+                               </tr>
+                               <tr>
+                                <th>Wozinski</th> <td>Kizo</td> <td>22</td>  <td>16.8</td> <td>24.6</td>
+                                <td>9.5</td> 
+                             </tr>
+                            </tbody>
+                        </table>
+                                
+                        <svg>
+                            <rect width="100%" height="100%" style="fill:rgb(32, 171, 72); stroke:none"/>
+                            <text class="hih"  x="50" y="90">Linki do kupna biletów :</text>
+                         </svg>
+                        
+                         <p><a href="https://www.ebilet.pl/muzyka/disco-polo/">E-bilety</a></p>
+                         <p><a href="https://biletyna.pl/koncert/disco-polo">Biletyna</a></p>
+                         <p><a href="https://allegro.pl/kategoria/muzyka-disco-polo-301538">Allegro</a></p>
+
+                      
+            </main>
+
+            <footer>
+
+                Maciej Plec Copyright 2022
+
+            </footer>
+
+    </div>    
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+     
+    <script>
+ 
+    $(document).ready(function() {
+    var NavY = $('nav').offset().top;
+      
+    var stickyNav = function(){
+    var ScrollY = $(window).scrollTop();
+           
+    if (ScrollY > NavY) { 
+        $('nav').addClass('sticky');
+    } else {
+        $('nav').removeClass('sticky'); 
+    }
+    };
+      
+    stickyNav();
+      
+    $(window).scroll(function() {
+        stickyNav();
+    });
+    });
+     
+    </script>
+</body>
+</html>
